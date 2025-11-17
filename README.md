@@ -5,31 +5,34 @@
 📍 Москва
 
 ## Data Scientist
+
 Когда начал работать с данными, поймал себя на мысли, что мне это по-настоящему нравится.
 
 
 <p align="left">
-  <a href="www.linkedin.com/in/ражин-михаил-29906838b" target="_blank">
-    <img src="https://github.com/devicons/devicon/blob/master/icons/linkedin/linkedin-original-wordmark.svg" 
+
+  <a href="https://www.linkedin.com/in/ражин-михаил-29906838b">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linkedin/linkedin-original-wordmark.svg" 
          width="60" height="60" alt="LinkedIn" />
   </a>
 
-  <a href="https://github.com/onejetpilot/onejetpilot/blob/main/Razhin_Mikhail_CV.pdf" target="_blank">
-    <img src="https://github.com/onejetpilot/onejetpilot/blob/main/icons/CV.png" 
-         width="60" height="60" />
+  <a href="https://github.com/onejetpilot/onejetpilot/blob/main/Razhin_Mikhail_CV.pdf">
+    <img src="https://raw.githubusercontent.com/onejetpilot/onejetpilot/main/icons/CV.png" 
+         width="60" height="60" alt="CV" />
   </a>
 
-  <a href="https://www.kaggle.com/mikhailrazhin" target="_blank">
-    <img src="https://github.com/devicons/devicon/blob/master/icons/kaggle/kaggle-original-wordmark.svg" 
+  <a href="https://www.kaggle.com/mikhailrazhin">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kaggle/kaggle-original-wordmark.svg" 
          width="60" height="60" alt="Kaggle" />
   </a>
 
-  <a href="https://t.me/@RazhinMS" target="_blank">
-    <img src="https://github.com/onejetpilot/onejetpilot/blob/main/icons/telegram.png" 
-         width="60" height="60" alt="Telegram"  />
+  <a href="https://t.me/RazhinMS">
+    <img src="https://raw.githubusercontent.com/onejetpilot/onejetpilot/main/icons/telegram.png" 
+         width="60" height="60" alt="Telegram" />
   </a>
 
 </p>
+
 
 
 ---
