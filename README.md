@@ -86,5 +86,10 @@
 |--------|-------------|
 | [Прогнозирование заказов такси](https://github.com/onejetpilot/data-science/tree/main/taxi_pred) | ![Python](https://img.shields.io/badge/-Python-blue) ![Pandas](https://img.shields.io/badge/-Pandas-blue) ![NumPy](https://img.shields.io/badge/-NumPy-yellow) ![Matplotlib](https://img.shields.io/badge/-Matplotlib-orange) ![Seaborn](https://img.shields.io/badge/-Seaborn-lightblue) ![Scikit-learn](https://img.shields.io/badge/-Scikit--learn-orange) ![LightGBM](https://img.shields.io/badge/-LightGBM-green) ![CatBoost](https://img.shields.io/badge/-CatBoost-black) |
 
+## Тестовые задания
+| Проект | Инструменты |
+|--------|-------------|
+| [Агрегация нарушений ПДД и операций обработки](https://github.com/onejetpilot/data-science/tree/main/test_sql_1) | ![SQL](https://img.shields.io/badge/SQL-EXISTS%20%7C%20JOIN-informational) |
+
 
 
