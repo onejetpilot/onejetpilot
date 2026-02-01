@@ -10,27 +10,21 @@
 
 ### Контакты:
 <p align="left">
-
   <a href="https://www.linkedin.com/in/ражин-михаил-29906838b">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linkedin/linkedin-original-wordmark.svg" 
-         width="60" height="60" alt="LinkedIn" />
+    <img src="https://cdn.simpleicons.org/linkedin/000000" width="40" height="40" />
   </a>
 
   <a href="https://github.com/onejetpilot/onejetpilot/blob/main/Razhin_Mikhail_CV.pdf">
-    <img src="https://raw.githubusercontent.com/onejetpilot/onejetpilot/main/icons/CV.png" 
-         width="60" height="60" alt="CV" />
+    <img src="https://cdn.simpleicons.org/readthedocs/000000" width="40" height="40" />
   </a>
 
   <a href="https://www.kaggle.com/mikhailrazhin">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kaggle/kaggle-original-wordmark.svg" 
-         width="60" height="60" alt="Kaggle" />
+    <img src="https://cdn.simpleicons.org/kaggle/000000" width="40" height="40" />
   </a>
 
   <a href="https://t.me/RazhinMS">
-    <img src="https://raw.githubusercontent.com/onejetpilot/onejetpilot/main/icons/telegram.png" 
-         width="60" height="60" alt="Telegram" />
+    <img src="https://cdn.simpleicons.org/telegram/000000" width="40" height="40" />
   </a>
-
 </p>
 
 
