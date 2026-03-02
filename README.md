@@ -84,7 +84,7 @@
 | **[Поиск изображений по тексту](https://github.com/onejetpilot/data-science/tree/main/image_find)** | PyTorch · OpenCV · NLP + CV |
 
 
-## NLP
+## NLP / LLM / RAG
 
 | Проект | Стек |
 |-------|------|
