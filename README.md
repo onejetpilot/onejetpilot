@@ -1,6 +1,6 @@
 # Михаил Ражин
 
-💼 Data Scientist 07.2024-н.в.
+Data Scientist 07.2024-н.в.
 
 📍 Москва
 
@@ -39,23 +39,16 @@
 ### Инструменты:
 
 <p align="left">
-  <img src="https://github.com/devicons/devicon/blob/master/icons/python/python-original-wordmark.svg" alt="python" width="50" height="50"/>
-  <img src="https://github.com/devicons/devicon/blob/master/icons/numpy/numpy-original-wordmark.svg" alt="numpy" width="50" height="50"/>
-  <img src="https://github.com/devicons/devicon/blob/master/icons/jupyter/jupyter-original-wordmark.svg" alt="jupyter" width="50" height="50"/>
-  <img src="https://github.com/devicons/devicon/blob/master/icons/pandas/pandas-original-wordmark.svg" alt="pandas" width="50" height="50"/>
-  <!--
-  <img src="https://github.com/devicons/devicon/blob/master/icons/pytorch/pytorch-original-wordmark.svg" width="50" height="50"/>
-  -->
-  <img src="https://github.com/devicons/devicon/blob/master/icons/scikitlearn/scikitlearn-original.svg" width="50" height="50"/>
-  <img src="https://github.com/devicons/devicon/blob/master/icons/matplotlib/matplotlib-original-wordmark.svg" width="50" height="50"/>
-  <img src="https://github.com/devicons/devicon/blob/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="50" height="50"/>
-  <img src="https://github.com/devicons/devicon/blob/master/icons/git/git-original-wordmark.svg" width="50" height="50"/>
-   <!--
-  <img src="https://github.com/devicons/devicon/blob/master/icons/apachespark/apachespark-original-wordmark.svg" width="50" height="50"/>
-  <img src="https://github.com/devicons/devicon/blob/master/icons/fastapi/fastapi-original-wordmark.svg" width="50" height="50"/>
-  <img src="https://github.com/devicons/devicon/blob/master/icons/docker/docker-original-wordmark.svg" width="50" height="50"/>
-   -->
+  <img src="https://cdn.simpleicons.org/python/000000" width="40" height="40"/>
+  <img src="https://cdn.simpleicons.org/numpy/000000" width="40" height="40"/>
+  <img src="https://cdn.simpleicons.org/jupyter/000000" width="40" height="40"/>
+  <img src="https://cdn.simpleicons.org/pandas/000000" width="40" height="40"/>
+  <img src="https://cdn.simpleicons.org/scikitlearn/000000" width="40" height="40"/>
+  <img src="https://cdn.simpleicons.org/postgresql/000000" width="40" height="40"/>
+  <img src="https://cdn.simpleicons.org/git/000000" width="40" height="40"/>
 </p>
+
+
 
 # Портфолио проектов Data Science
 
