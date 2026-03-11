@@ -82,7 +82,6 @@ Data Scientist 07.2024-н.в.
 | Проект | Стек |
 |-------|------|
 | **[Классификация токсичных комментариев](https://github.com/onejetpilot/data-science/tree/main/toxic_comments)** | Text classification · spaCy · NLTK |
-| **[Telegram-бот «Морти-гид» (LLM + RAG)](https://github.com/onejetpilot/TG_BOT)** | LLM · RAG · ChromaDB · LangChain · Telegram Bot API |
 
 
 ## Time Series
