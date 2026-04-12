@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>WootDeFook — Character Design Commissions</title>
+<meta name="description" content="Sci-fi character design commissions by WootDeFook"/>
+<style>
+:root {
+  --bg:#060914;
+  --bg2:#0a1024;
+  --card:rgba(255,255,255,.04);
+  --line:rgba(255,255,255,.12);
+  --text:#eef6ff;
+  --muted:#9ca7ba;
+  --cyan:#62eaff;
+  --cyan2:#1ed6ff;
+  --purple:#9b7dff;
+  --glow:0 0 40px rgba(98,234,255,.15),0 0 80px rgba(155,125,255,.08);
+  --radius:28px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  color:var(--text);
+  font:16px/1.6 Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+  background:
+    radial-gradient(circle at 10% 0%, rgba(30,214,255,.16), transparent 25%),
+    radial-gradient(circle at 85% 5%, rgba(155,125,255,.18), transparent 20%),
+    linear-gradient(180deg, #050816 0%, #071022 34%, #050816 100%);
+}
+body::before{
+  content:"";
+  position:fixed;inset:0;pointer-events:none;opacity:.08;
+  background-image:
+    linear-gradient(rgba(255,255,255,.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.08) 1px, transparent 1px);
+  background-size:38px 38px;
+}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.container{width:min(1180px, calc(100% - 32px)); margin:0 auto}
+.section{padding:88px 0}
+.badge{display:inline-flex;gap:10px;align-items:center;padding:10px 14px;border:1px solid rgba(98,234,255,.3);border-radius:999px;background:rgba(98,234,255,.08);color:#b4f6ff;font-size:12px;letter-spacing:.18em;text-transform:uppercase}
+.hero{padding:42px 0 64px;display:grid;grid-template-columns:1fr 1.08fr;gap:42px;align-items:center}
+.avatar-row{display:flex;gap:18px;align-items:center;margin-bottom:20px}
+.avatar{width:82px;height:82px;border-radius:22px;overflow:hidden;border:1px solid rgba(98,234,255,.35);background:rgba(255,255,255,.06);box-shadow:var(--glow)}
+h1{font-size:clamp(44px,8vw,84px);line-height:.98;margin:0}
+h2{font-size:clamp(30px,4.2vw,48px);line-height:1.05;margin:0 0 18px}
+h3{font-size:24px;line-height:1.15;margin:0}
+.sub{color:var(--muted);max-width:700px}
+.cta-row{display:flex;flex-wrap:wrap;gap:14px;margin:28px 0 34px}
+.btn{padding:14px 22px;border-radius:18px;border:1px solid var(--line);background:rgba(255,255,255,.04);font-weight:700;transition:.25s ease;display:inline-flex;align-items:center;gap:10px}
+.btn.primary{border-color:rgba(98,234,255,.35);background:linear-gradient(180deg, rgba(98,234,255,.18), rgba(98,234,255,.08));box-shadow:var(--glow)}
+.btn:hover{transform:translateY(-2px);background:rgba(255,255,255,.06)}
+.stat-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.stat{padding:18px 20px;border:1px solid var(--line);border-radius:22px;background:var(--card);backdrop-filter: blur(12px)}
+.stat .k{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.16em}
+.art-shell{position:relative}
+.art-shell::before{content:"";position:absolute;inset:-16px;border-radius:38px;background:radial-gradient(circle, rgba(98,234,255,.18), transparent 60%);filter:blur(24px);z-index:-1}
+.hero-art{overflow:hidden;border-radius:34px;border:1px solid rgba(98,234,255,.3);background:rgba(255,255,255,.05);padding:12px;box-shadow:var(--glow)}
+.hero-art img{border-radius:24px;min-height:300px;object-fit:cover}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{position:relative;overflow:hidden;padding:24px;border-radius:var(--radius);border:1px solid var(--line);background:var(--card);backdrop-filter: blur(12px);transition:.3s ease;box-shadow:0 0 20px rgba(98,234,255,.04)}
+.card:hover{transform:translateY(-4px);border-color:rgba(98,234,255,.28);box-shadow:var(--glow)}
+.card::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at top right, rgba(98,234,255,.12), transparent 35%);pointer-events:none}
+.card .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.price{margin-top:10px;font-size:40px;font-weight:800;color:var(--cyan)}
+.split{display:grid;grid-template-columns:.92fr 1.08fr;gap:18px;margin-top:18px}
+.mini-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:16px}
+.mini{padding:16px;border-radius:20px;border:1px solid var(--line);background:rgba(0,0,0,.18)}
+.mini .small{font-size:13px;color:var(--muted)}
+.label{display:flex;align-items:center;gap:10px;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:#b4f6ff;margin-bottom:16px}
+.calc-wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:22px}
+.group{margin-top:28px}
+.select-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.select-card{cursor:pointer;text-align:left;padding:18px;border-radius:24px;border:1px solid var(--line);background:rgba(255,255,255,.03);transition:.25s ease;position:relative;overflow:hidden}
+.select-card:hover{transform:translateY(-3px);border-color:rgba(98,234,255,.24)}
+.select-card.active{border-color:rgba(98,234,255,.6);background:rgba(98,234,255,.10);box-shadow:var(--glow)}
+.select-card .price-sm{font-size:28px;font-weight:800;color:var(--cyan);margin-top:8px}
+.control-card{padding:20px;border-radius:24px;border:1px solid var(--line);background:rgba(0,0,0,.18)}
+.range-row{margin-top:16px}
+.range-row label{display:block;font-size:14px;color:var(--muted);margin-bottom:10px}
+input[type=range]{width:100%;accent-color:var(--cyan2)}
+.summary{position:sticky;top:20px;padding:24px;border-radius:30px;border:1px solid rgba(98,234,255,.24);background:linear-gradient(180deg, rgba(98,234,255,.10), rgba(255,255,255,.03));box-shadow:var(--glow);backdrop-filter:blur(12px)}
+.total{font-size:56px;line-height:1;font-weight:900;color:var(--cyan);margin-top:8px}
+.note-list{display:grid;gap:12px;margin-top:20px}
+.note-item{padding:15px;border-radius:18px;border:1px solid var(--line);background:rgba(0,0,0,.18)}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.work{overflow:hidden;border-radius:30px;border:1px solid var(--line);background:var(--card);transition:.3s ease;box-shadow:0 0 20px rgba(98,234,255,.03)}
+.work:hover{transform:translateY(-5px);border-color:rgba(98,234,255,.28);box-shadow:var(--glow)}
+.thumb{position:relative;overflow:hidden;height:340px}
+.thumb img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.work:hover .thumb img{transform:scale(1.045)}
+.thumb::after{content:"";position:absolute;inset:0;background:linear-gradient(to top, rgba(0,0,0,.72), transparent 45%)}
+.caption{padding:18px 18px 20px;font-weight:700;letter-spacing:.04em}
+.footer-grid{display:grid;grid-template-columns:1fr .92fr;gap:18px}
+.contact-card{padding:24px;border-radius:30px;border:1px solid rgba(98,234,255,.24);background:linear-gradient(180deg, rgba(98,234,255,.10), rgba(255,255,255,.03));box-shadow:var(--glow)}
+.contact-link{display:flex;justify-content:space-between;align-items:center;padding:16px 18px;border-radius:18px;border:1px solid var(--line);background:rgba(0,0,0,.18);margin-top:14px;transition:.25s ease}
+.contact-link:hover{transform:translateY(-2px);background:rgba(0,0,0,.28)}
+.muted{color:var(--muted)}
+.reveal{opacity:0;transform:translateY(18px);transition:.7s ease}
+.reveal.show{opacity:1;transform:none}
+@media (max-width: 980px){
+  .hero,.split,.calc-wrap,.footer-grid{grid-template-columns:1fr}
+  .summary{position:static}
+  .gallery{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width: 720px){
+  .grid-3,.mini-grid,.select-grid,.gallery,.stat-grid{grid-template-columns:1fr}
+  .container{width:min(100% - 20px, 1180px)}
+  .section{padding:68px 0}
+  .hero{padding-top:28px}
+  .thumb{height:280px}
+}
+</style>
+</head>
+<body>
+  <div class="container">
+    <section class="hero reveal">
+      <div>
+        <div class="avatar-row">
+          <div class="avatar"><img src="REPLACE_AVATAR" alt="WootDeFook avatar"></div>
+          <div><div class="badge">Character Design Commissions</div></div>
+        </div>
+        <h1>WootDeFook</h1>
+        <p class="sub">Sci-fi character design, original concepts, reference sheets and commission work with a sharper futuristic look, stronger silhouettes and clean presentation.</p>
+        <div class="cta-row">
+          <a class="btn primary" href="#commissions">View Pricing</a>
+          <a class="btn" href="#calculator">Open Calculator</a>
+          <a class="btn" href="#gallery">See Gallery</a>
+        </div>
+        <div class="stat-grid">
+          <div class="stat"><div class="k">Focus</div><div>Sci-fi, dark fantasy, character concept work</div></div>
+          <div class="stat"><div class="k">Contact</div><div>X and email commissions</div></div>
+        </div>
+      </div>
+      <div class="art-shell"><div class="hero-art"><img src="REPLACE_HERO" alt="Hero artwork"></div></div>
+    </section>
+  </div>
+
+  <section id="commissions" class="section">
+    <div class="container">
+      <div class="label">✦ Commission Types</div>
+      <div class="grid-3 reveal">
+        <div class="card"><div class="eyebrow">Commission</div><h3>Bust</h3><div class="price">$100</div><p class="muted">Portrait-focused commission with clean rendering and strong facial design.</p></div>
+        <div class="card"><div class="eyebrow">Commission</div><h3>Half Body</h3><div class="price">$200</div><p class="muted">Upper body to thigh composition with more costume and silhouette detail.</p></div>
+        <div class="card"><div class="eyebrow">Commission</div><h3>Full Body</h3><div class="price">$300</div><p class="muted">Full character illustration with full silhouette and design read.</p></div>
+      </div>
+      <div class="split reveal">
+        <div class="card">
+          <div class="eyebrow">Props</div>
+          <h3 style="margin-top:10px">Additional Props</h3>
+          <div class="mini-grid">
+            <div class="mini"><div class="small">Light</div><div class="price-sm" style="font-size:28px">$20</div></div>
+            <div class="mini"><div class="small">Medium</div><div class="price-sm" style="font-size:28px">$50</div></div>
+            <div class="mini"><div class="small">Complex</div><div class="price-sm" style="font-size:28px">$100</div></div>
+          </div>
+          <p class="muted">If a prop needs additional angle views, each extra angle adds <span style="color:var(--cyan)">+50%</span> of that prop’s base cost.</p>
+        </div>
+        <div class="card">
+          <div class="eyebrow">Reference Sheet</div>
+          <h3 style="margin-top:10px">Full Ref Sheet — $700</h3>
+          <p class="muted">Includes main posed view, bust, front A-pose, back A-pose and side A-pose. You can exclude one of the A-pose views for <span style="color:var(--cyan)">-$100</span> each.</p>
+          <div class="mini-grid" style="grid-template-columns:repeat(2,1fr)">
+            <div class="mini">Main posed view</div>
+            <div class="mini">Bust</div>
+            <div class="mini">Front A-pose</div>
+            <div class="mini">Back A-pose</div>
+            <div class="mini">Side A-pose</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="calculator" class="section">
+    <div class="container">
+      <div class="label">✦ Price Calculator</div>
+      <div class="calc-wrap reveal">
+        <div class="card">
+          <h2>Build your order</h2>
+          <p class="muted">Click the cards to add commission types, props and a reference sheet. The total updates automatically.</p>
+
+          <div class="group">
+            <div class="eyebrow">Commission Type</div>
+            <div class="select-grid">
+              <button class="select-card" data-key="bust"><div class="eyebrow">Select</div><h3>Bust</h3><div class="price-sm">$100</div></button>
+              <button class="select-card" data-key="half"><div class="eyebrow">Select</div><h3>Half Body</h3><div class="price-sm">$200</div></button>
+              <button class="select-card" data-key="full"><div class="eyebrow">Select</div><h3>Full Body</h3><div class="price-sm">$300</div></button>
+            </div>
+          </div>
+
+          <div class="group">
+            <div class="eyebrow">Props</div>
+            <div class="select-grid">
+              <button class="select-card" data-key="propLight"><div class="eyebrow">Select</div><h3>Light Prop</h3><div class="price-sm">$20</div></button>
+              <button class="select-card" data-key="propMid"><div class="eyebrow">Select</div><h3>Medium Prop</h3><div class="price-sm">$50</div></button>
+              <button class="select-card" data-key="propHard"><div class="eyebrow">Select</div><h3>Complex Prop</h3><div class="price-sm">$100</div></button>
+            </div>
+          </div>
+
+          <div class="group" style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+            <div class="control-card">
+              <div class="eyebrow">Reference Sheet</div>
+              <button class="select-card" data-key="refsheet" style="width:100%;margin-top:14px"><div class="eyebrow">Select</div><h3>Full Ref Sheet</h3><div class="price-sm">$700</div></button>
+              <div class="range-row">
+                <label for="removedViews">Removed A-pose views (0–3)</label>
+                <input id="removedViews" type="range" min="0" max="3" value="0">
+                <div class="muted" id="removedViewsValue">-$0</div>
+              </div>
+            </div>
+            <div class="control-card">
+              <div class="eyebrow">Prop Angle Views</div>
+              <p class="muted">Each additional prop angle adds +50% of that prop’s base price.</p>
+              <div class="range-row">
+                <label for="propAngles">Extra prop angles (0–6)</label>
+                <input id="propAngles" type="range" min="0" max="6" value="0">
+                <div class="muted" id="propAnglesValue">0 extra angles</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="summary">
+          <div class="eyebrow" style="color:#d8fbff">Estimated Price</div>
+          <div class="total" id="total">$0</div>
+          <p class="muted">Final price may vary slightly depending on character complexity, rendering difficulty and revision scope.</p>
+          <div class="note-list">
+            <div class="note-item">Base commissions can be combined.</div>
+            <div class="note-item">Props are priced separately by complexity.</div>
+            <div class="note-item">Extra prop angles add +50% each.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="section">
+    <div class="container">
+      <div class="label">✦ Gallery</div>
+      <div class="gallery">
+        <article class="work reveal"><div class="thumb"><img src="REPLACE_G1" alt="K-AHEARS"></div><div class="caption">K-AHEARS</div></article>
+        <article class="work reveal"><div class="thumb"><img src="REPLACE_G2" alt="5150 PLANET / SHEAR"></div><div class="caption">5150 PLANET / SHEAR</div></article>
+        <article class="work reveal"><div class="thumb"><img src="REPLACE_G3" alt="ZB UAGUAI"></div><div class="caption">ZB UAGUAI</div></article>
+        <article class="work reveal"><div class="thumb"><img src="REPLACE_G4" alt="FMOCTROR"></div><div class="caption">FMOCTROR</div></article>
+        <article class="work reveal"><div class="thumb"><img src="REPLACE_G5" alt="ICE WANDERER"></div><div class="caption">ICE WANDERER</div></article>
+        <article class="work reveal"><div class="thumb"><img src="REPLACE_G6" alt="SHI &amp; SHIGA"></div><div class="caption">SHI &amp; SHIGA</div></article>
+        <article class="work reveal"><div class="thumb"><img src="REPLACE_G7" alt="ADOPTABLE"></div><div class="caption">ADOPTABLE</div></article>
+        <article class="work reveal"><div class="thumb"><img src="REPLACE_G8" alt="BLUE ORACLE"></div><div class="caption">BLUE ORACLE</div></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:24px">
+    <div class="container">
+      <div class="footer-grid reveal">
+        <div class="card">
+          <div class="eyebrow">Process</div>
+          <h2>Commission Workflow</h2>
+          <div class="note-list">
+            <div class="note-item">1. Send your idea, references and the commission type you want.</div>
+            <div class="note-item">2. I confirm the scope, estimated price and production details.</div>
+            <div class="note-item">3. Final cost depends on complexity, prop load and extra view requirements.</div>
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="eyebrow" style="color:#d8fbff">Contact</div>
+          <h2>Get in touch</h2>
+          <a class="contact-link" href="https://x.com/WDefook" target="_blank" rel="noreferrer">
+            <div><div class="muted">X</div><div style="font-weight:700;font-size:20px">@WDefook</div></div>
+            <div>↗</div>
+          </a>
+          <a class="contact-link" href="mailto:twodmouse@gmail.com">
+            <div><div class="muted">Email</div><div style="font-weight:700;font-size:20px">twodmouse@gmail.com</div></div>
+            <div>✉</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<script>
+const state = {
+  bust:false, half:false, full:false,
+  propLight:false, propMid:false, propHard:false,
+  refsheet:false, removedViews:0, propAngles:0
+};
+const prices = { bust:100, half:200, full:300, propLight:20, propMid:50, propHard:100, refsheet:700 };
+document.querySelectorAll('.select-card[data-key]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const key = btn.dataset.key;
+    state[key] = !state[key];
+    btn.classList.toggle('active', state[key]);
+    updateTotal();
+  });
+});
+document.getElementById('removedViews').addEventListener('input', e => {
+  state.removedViews = Number(e.target.value);
+  document.getElementById('removedViewsValue').textContent = `-${state.removedViews * 100}$`;
+  updateTotal();
+});
+document.getElementById('propAngles').addEventListener('input', e => {
+  state.propAngles = Number(e.target.value);
+  document.getElementById('propAnglesValue').textContent = `${state.propAngles} extra angle${state.propAngles === 1 ? '' : 's'}`;
+  updateTotal();
+});
+function updateTotal(){
+  let sum = 0;
+  if(state.bust) sum += prices.bust;
+  if(state.half) sum += prices.half;
+  if(state.full) sum += prices.full;
+  let propBase = 0;
+  if(state.propLight){ sum += prices.propLight; propBase += prices.propLight; }
+  if(state.propMid){ sum += prices.propMid; propBase += prices.propMid; }
+  if(state.propHard){ sum += prices.propHard; propBase += prices.propHard; }
+  if(propBase > 0 && state.propAngles > 0) sum += propBase * 0.5 * state.propAngles;
+  if(state.refsheet) {
+    sum += prices.refsheet;
+    sum -= state.removedViews * 100;
+  }
+  document.getElementById('total').textContent = '$' + Math.round(sum);
+}
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting) entry.target.classList.add('show');
+  });
+}, { threshold:.14 });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+updateTotal();
+</script>
+</body>
+</html>
