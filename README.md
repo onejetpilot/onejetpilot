@@ -1,102 +1,51 @@
 # Михаил Ражин
 
-Data Scientist 07.2024-н.в.
+**Data Scientist**  
+📍 Москва · 🟢 Open to work  
 
-📍 Москва
+Работаю с табличными данными и прикладным ML: анализ, feature engineering, построение и оптимизация моделей под бизнес-задачи.
 
-## Data Scientist
 
-Работаю с данными и машинным обучением над прикладными задачами.
+### Контакты
 
-### Контакты:
-<p align="left">
-
-  <a href="https://www.linkedin.com/in/ражин-михаил-29906838b">
-    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/linkedin.svg"
-         width="38" height="38" alt="LinkedIn" />
-  </a>
-
-<a href="https://github.com/onejetpilot/onejetpilot/blob/main/Razhin_Mikhail_CV.pdf">
-  <img src="https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/file-text.svg"
-       width="38" height="38" alt="CV" />
-</a>
-
-  <a href="https://www.kaggle.com/mikhailrazhin">
-    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/kaggle.svg"
-         width="38" height="38" alt="Kaggle" />
-  </a>
-
-  <a href="https://t.me/RazhinMS">
-    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/telegram.svg"
-         width="38" height="38" alt="Telegram" />
-  </a>
-
-</p>
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ражин-михаил-29906838b)
+[![Kaggle](https://img.shields.io/badge/Kaggle-20BEFF?style=flat-square&logo=kaggle&logoColor=white)](https://www.kaggle.com/mikhailrazhin)
+[![Telegram](https://img.shields.io/badge/Telegram-26A5E4?style=flat-square&logo=telegram&logoColor=white)](https://t.me/RazhinMS)
+[![CV](https://img.shields.io/badge/CV-PDF-red?style=flat-square&logo=adobeacrobatreader&logoColor=white)](https://github.com/onejetpilot/onejetpilot/blob/main/Razhin_Mikhail_CV.pdf)
 
 
 
----
-### Инструменты:
+### Стек
 
-<p align="left">
-  <img src="https://cdn.simpleicons.org/python/000000" width="40" height="40"/>
-  <img src="https://cdn.simpleicons.org/numpy/000000" width="40" height="40"/>
-  <img src="https://cdn.simpleicons.org/jupyter/000000" width="40" height="40"/>
-  <img src="https://cdn.simpleicons.org/pandas/000000" width="40" height="40"/>
-  <img src="https://cdn.simpleicons.org/scikitlearn/000000" width="40" height="40"/>
-  <img src="https://cdn.simpleicons.org/postgresql/000000" width="40" height="40"/>
-  <img src="https://cdn.simpleicons.org/git/000000" width="40" height="40"/>
-</p>
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
+![CatBoost](https://img.shields.io/badge/CatBoost-FFCC00?style=flat-square)
+![LightGBM](https://img.shields.io/badge/LightGBM-9ACD32?style=flat-square)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 
 
 
-# Портфолио проектов Data Science
+## Основные проекты
+
+### SAN Bot — AI-консультант по товарам  
+https://github.com/AI-agent-team-2/data-science-
+
+> AI-агент для консультации пользователей по товарному каталогу (сантехнические товары)
+
+- **ML:** RAG (ChromaDB), embeddings, генерация ответов через LLM  
+- **Архитектура:** RAG + product lookup + web fallback  
+- **Ключевые решения:** deterministic routing (ниже latency), контроль источников данных  
+- **Стек:** Python · OpenRouter · ChromaDB · aiogram · Docker · systemd  
 
 
-## Табличные данные · ML / EDA / бизнес
+### Yandex Practicum — ML проекты  
+https://github.com/onejetpilot/data-science
 
-| Проект | Стек |
-|-------|------|
-| **[Температура сплава](https://github.com/onejetpilot/data-science/tree/main/alloy_temp)** | RandomForest · scikit-learn · SQLite |
-| **[Стоимость автомобилей](https://github.com/onejetpilot/data-science/tree/main/car_price)** | CatBoost · scikit-learn |
-| **[Прогноз ДТП](https://github.com/onejetpilot/data-science/tree/main/collisions)** | CatBoost · scikit-learn |
-| **[Персонализация предложений](https://github.com/onejetpilot/data-science/tree/main/offers_pers)** | scikit-learn · feature engineering |
-| **[Предсказание покупок](https://github.com/onejetpilot/data-science/tree/main/purchase_prediction)** | CatBoost · LightGBM |
-| **[Рынок недвижимости](https://github.com/onejetpilot/data-science/tree/main/real_estate)** | EDA · pandas · rule-based analytics |
-| **[Аренда самокатов](https://github.com/onejetpilot/data-science/tree/main/rides)** | EDA · SciPy · hypothesis testing |
-| **[Температура звезды](https://github.com/onejetpilot/data-science/tree/main/star_temp)** | PyTorch · scikit-learn · neural regression |
-| **[Успешность стартапов](https://github.com/onejetpilot/data-science/tree/main/start_up)** | LightGBM · CatBoost |
-| **[Локация месторождений](https://github.com/onejetpilot/data-science/tree/main/well_loc)** | LinearRegression · bootstrap risk analysis |
+> Портфолио учебных проектов по Data Science
 
-
-## Computer Vision (CV)
-
-| Проект | Стек |
-|-------|------|
-| **[Определение возраста по фото](https://github.com/onejetpilot/data-science/tree/main/age_photo)** | scikit-learn · Pillow · CV features |
-| **[Поиск изображений по тексту](https://github.com/onejetpilot/data-science/tree/main/image_find)** | PyTorch · SentenceTransformers · multimodal retrieval |
-
-
-## NLP
-
-| Проект | Стек |
-|-------|------|
-| **[Классификация токсичных комментариев](https://github.com/onejetpilot/data-science/tree/main/toxic_comments)** | TF-IDF · LinearSVC · spaCy |
-
-
-## Time Series
-
-| Проект | Стек |
-|-------|------|
-| **[Прогнозирование заказов такси](https://github.com/onejetpilot/data-science/tree/main/taxi_pred)** | Time series · lag features · CatBoost/LinearRegression |
-
-
-## SQL / Test Tasks
-
-| Проект | Стек |
-|-------|------|
-| **[Агрегация нарушений ПДД](https://github.com/onejetpilot/data-science/tree/main/test_sql_1)** | SQL · PostgreSQL · Data aggregation |
-
-
-
-
+- **ML:** CatBoost, LightGBM, RandomForest  
+- **Задачи:** регрессия, классификация, временные ряды  
+- **Инструменты:** pandas, scikit-learn, SQL  
