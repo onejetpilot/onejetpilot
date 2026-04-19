@@ -35,10 +35,10 @@ https://github.com/AI-agent-team-2/data-science-
 
 > AI-агент для консультации пользователей по товарному каталогу (сантехнические товары)
 
-- **ML:** RAG (ChromaDB), embeddings, генерация ответов через LLM  
-- **Архитектура:** RAG + product lookup + web fallback  
-- **Ключевые решения:** deterministic routing (ниже latency), контроль источников данных  
-- **Стек:** Python · OpenRouter · ChromaDB · aiogram · Docker · systemd  
+- **ML:** RAG (ChromaDB), SBERT embeddings, генерация ответов через LLM  
+- **Архитектура:** deterministic routing (RAG → lookup → web), раздельные инструменты (rag_search, product_lookup, web_search)  
+- **Ключевые решения:** отказ от LLM tool-calling (снижение latency), приоритет локальной базы, контролируемый fallback  
+- **Стек:** Python · LangChain · OpenRouter · ChromaDB · aiogram · Docker · systemd
 
 
 ### Yandex Practicum — ML проекты  
