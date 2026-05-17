@@ -34,6 +34,17 @@
 
 ## Проекты
 
+### ETL-пайплайн загрузки валютных курсов из API в PostgreSQL  
+https://github.com/onejetpilot/api-to-postgres-etl
+
+> ETL-проект для загрузки исторических валютных курсов из публичного REST API в PostgreSQL
+
+- **Data Pipeline:** extraction JSON-данных из внешнего API, очистка и нормализация данных через Pandas, загрузка в staging/core таблицы PostgreSQL  
+- **Архитектура:** modular ETL pipeline (extract → transform → load), дедупликация данных, upsert через `ON CONFLICT DO UPDATE`  
+- **Infrastructure:** PostgreSQL в Docker Compose, локальный orchestration через Python entrypoint, конфигурация через environment variables  
+- **Analytics:** аналитические SQL-запросы с CTE, оконными функциями (`LAG`), агрегациями и расчетом дневной динамики валютных курсов  
+- **Стек:** Python · Pandas · PostgreSQL · SQLAlchemy · Docker · SQL · REST API
+
 ### Telegram-бот для подготовки к собеседованиям по Data Engineering  
 https://github.com/onejetpilot/de-bot
 
