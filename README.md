@@ -34,15 +34,26 @@
 
 ## Проекты
 
+### Airflow ETL-пайплайн построения Sales DWH в PostgreSQL
+https://github.com/onejetpilot/airflow-sales-dwh
+
+> ETL-проект для генерации, загрузки и трансформации данных о продажах в PostgreSQL с оркестрацией через Apache Airflow
+
+- **Пайплайн:** генерация raw-данных в CSV/JSON/XML, загрузка в staging-таблицы PostgreSQL, построение core-слоя и аналитических marts
+- **Архитектура:** layered DWH pipeline (raw → staging → core → marts), orchestration через Airflow DAG, последовательные task dependencies и контроль max_active_runs
+- **Инфраструктура:** PostgreSQL и Apache Airflow в Docker Compose, Airflow UI, подключение к БД через Airflow Connection, volume mounts для DAGs, SQL, scripts и data
+- **Аналитика:** витрины mart_daily_sales, mart_customer_ltv, mart_product_performance, проверки качества данных и SQL-запросы с агрегациями, CTE и оконными функциями
+- **Стек:** Python · Pandas · Apache Airflow · PostgreSQL · SQLAlchemy · Docker Compose · SQL
+
 ### ETL-пайплайн загрузки валютных курсов из API в PostgreSQL  
 https://github.com/onejetpilot/api-to-postgres-etl
 
 > ETL-проект для загрузки исторических валютных курсов из публичного REST API в PostgreSQL
 
-- **Data Pipeline:** extraction JSON-данных из внешнего API, очистка и нормализация данных через Pandas, загрузка в staging/core таблицы PostgreSQL  
+- **Пайплайн:** extraction JSON-данных из внешнего API, очистка и нормализация данных через Pandas, загрузка в staging/core таблицы PostgreSQL  
 - **Архитектура:** modular ETL pipeline (extract → transform → load), дедупликация данных, upsert через `ON CONFLICT DO UPDATE`  
-- **Infrastructure:** PostgreSQL в Docker Compose, локальный orchestration через Python entrypoint, конфигурация через environment variables  
-- **Analytics:** аналитические SQL-запросы с CTE, оконными функциями (`LAG`), агрегациями и расчетом дневной динамики валютных курсов  
+- **Инфраструктура:** PostgreSQL в Docker Compose, локальный orchestration через Python entrypoint, конфигурация через environment variables  
+- **Аналитика:** аналитические SQL-запросы с CTE, оконными функциями (`LAG`), агрегациями и расчетом дневной динамики валютных курсов  
 - **Стек:** Python · Pandas · PostgreSQL · SQLAlchemy · Docker · SQL · REST API
 
 ### Telegram-бот для подготовки к собеседованиям по Data Engineering  
@@ -50,10 +61,10 @@ https://github.com/onejetpilot/de-bot
 
 > Telegram-бот для тренировки собеседований по Data Engineering и проверки ответов пользователей
 
-- **Data Pipeline:** обработка базы вопросов, хранение результатов интервью и истории пользователей  
+- **Пайплайн:** обработка базы вопросов, хранение результатов интервью и истории пользователей  
 - **Архитектура:** stateful interview flow, случайная выборка вопросов, автоматический feedback по ответам  
-- **Infrastructure:** Telegram Bot API integration, Docker deployment, конфигурация через environment variables  
-- **LLM Integration:** анализ ответов и формирование рекомендаций через OpenRouter API  
+- **Инфраструктура:** Telegram Bot API integration, Docker deployment, конфигурация через environment variables  
+- **LLM интеграция:** анализ ответов и формирование рекомендаций через OpenRouter API  
 - **Стек:** Python · aiogram · PostgreSQL · OpenRouter · Docker · Linux
 
 ### AI-консультант по инженерной сантехнике на базе RAG
@@ -61,10 +72,10 @@ https://github.com/AI-agent-team-2/data-science-
 
 > AI/RAG сервис для консультации пользователей по товарному каталогу (инженерная сантехника)
 
-- **Data Pipeline:** ingestion TXT-документов, chunking, embeddings pipeline, retrieval через ChromaDB  
+- **Пайплайн:** ingestion TXT-документов, chunking, embeddings pipeline, retrieval через ChromaDB  
 - **Архитектура:** deterministic routing (RAG → product lookup → web fallback), модульные инструменты (rag_search, product_lookup, web_search)  
-- **Infrastructure:** Docker, systemd, VPS deployment, GitHub Actions CI/CD, Telegram Bot API integration  
-- **Observability:** Langfuse tracing, structured logging, мониторинг вызовов LLM и tool pipeline  
+- **Инфраструктура:** Docker, systemd, VPS deployment, GitHub Actions CI/CD, Telegram Bot API integration  
+- **Мониторинг:** Langfuse tracing, structured logging, мониторинг вызовов LLM и tool pipeline  
 - **Стек:** Python · PostgreSQL · ChromaDB · LangChain · OpenRouter · aiogram · Docker · Linux
 
 
