@@ -56,28 +56,6 @@ https://github.com/onejetpilot/api-to-postgres-etl
 - **Аналитика:** аналитические SQL-запросы с CTE, оконными функциями (`LAG`), агрегациями и расчетом дневной динамики валютных курсов  
 - **Стек:** Python · Pandas · PostgreSQL · SQLAlchemy · Docker · SQL · REST API
 
-### Telegram-бот для подготовки к собеседованиям по Data Engineering  
-https://github.com/onejetpilot/de-bot
-
-> Telegram-бот для тренировки собеседований по Data Engineering и проверки ответов пользователей
-
-- **Пайплайн:** обработка базы вопросов, хранение результатов интервью и истории пользователей  
-- **Архитектура:** stateful interview flow, случайная выборка вопросов, автоматический feedback по ответам  
-- **Инфраструктура:** Telegram Bot API integration, Docker deployment, конфигурация через environment variables  
-- **LLM интеграция:** анализ ответов и формирование рекомендаций через OpenRouter API  
-- **Стек:** Python · aiogram · PostgreSQL · OpenRouter · Docker · Linux
-
-### AI-консультант по инженерной сантехнике на базе RAG
-https://github.com/AI-agent-team-2/data-science-
-
-> AI/RAG сервис для консультации пользователей по товарному каталогу (инженерная сантехника)
-
-- **Пайплайн:** ingestion TXT-документов, chunking, embeddings pipeline, retrieval через ChromaDB  
-- **Архитектура:** deterministic routing (RAG → product lookup → web fallback), модульные инструменты (rag_search, product_lookup, web_search)  
-- **Инфраструктура:** Docker, systemd, VPS deployment, GitHub Actions CI/CD, Telegram Bot API integration  
-- **Мониторинг:** Langfuse tracing, structured logging, мониторинг вызовов LLM и tool pipeline  
-- **Стек:** Python · PostgreSQL · ChromaDB · LangChain · OpenRouter · aiogram · Docker · Linux
-
 
 ### Yandex Practicum — Data Projects 
 https://github.com/onejetpilot/data-science
