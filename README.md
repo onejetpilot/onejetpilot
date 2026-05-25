@@ -34,6 +34,18 @@
 
 ## Проекты
 
+### Data Engineer Interview Bot с аналитическим event pipeline
+https://github.com/onejetpilot/de-bot
+
+> Telegram-бот для подготовки к DE-собеседованиям с отдельным аналитическим пайплайном событий
+
+- **Пайплайн:**: сбор событий бота, запись raw events в PostgreSQL, инкрементальная загрузка в ClickHouse через Airflow DAG
+- **Архитектура:** Telegram/API → PostgreSQL → Airflow ETL → ClickHouse, batch processing с watermark-контролем и защитой от повторной обработки
+- **Хранилища:** SQLite для состояния бота и истории интервью, PostgreSQL для raw event storage, ClickHouse для аналитического слоя
+- **Инфраструктура:** Docker Compose, PostgreSQL, ClickHouse, Airflow Webserver/Scheduler, FastAPI-сервис
+- **Аналитика:** raw/enriched таблицы событий, подготовка данных для анализа активности пользователей, тем, качества ответов и времени реакции
+- **Стек:** Python · SQL · PostgreSQL · ClickHouse · Apache Airflow · Docker Compose · FastAPI · SQLite
+
 ### Airflow ETL-пайплайн построения Sales DWH в PostgreSQL
 https://github.com/onejetpilot/airflow-sales-dwh
 
