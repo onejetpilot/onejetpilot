@@ -1,7 +1,7 @@
 # Михаил Ражин
 
 **Data Engineer**  
-📍 Москва · 🟢 Open to work
+📍 Москва
 
 Строю data pipelines и AI-сервисы: обработка данных, автоматизация, orchestration и production deployment.
 
